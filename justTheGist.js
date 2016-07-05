@@ -181,7 +181,7 @@ $(document).ready(function() {
 	//Search for images via Flickr
 	function searchFlickr()	 {
 		$("#btnEnterSearchTerm").click(function(){
-			$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+			$.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
 			{
 				tags: $("#searchTerm").val(),
 				tagmode: "any",
