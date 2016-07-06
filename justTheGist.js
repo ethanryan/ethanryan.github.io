@@ -30,17 +30,6 @@ $(document).ready(function() {
   removeHTMLTagsAndOutputResults();
 
 
-	//formatting syntax of jquery function in plain vanilla javascript:
-
-	 	// function bindListener()	 {
-	 		// $("#something").on("click", function(e) {
-	 			// e.which;
-	 		// });
-	 	// }
-
-	 	// bindListener();
-
-
 			////make enter key work 
 	    ////so function works on enter key
 	    // $("#btnEnterSearchTerm").on("submit", function() {
@@ -48,12 +37,12 @@ $(document).ready(function() {
 	    //   return false; //Otherwise the form will be submitted
 	    // });
 
-// $('.input').keypress(function(e) {
-//   if (e.which == 13) {
-//     $('form#login').submit();
-//     return false;    //<---- Add this line
-//   }
-// });
+			// $('.input').keypress(function(e) {
+			//   if (e.which == 13) {
+			//     $('form#login').submit();
+			//     return false;    //<---- Add this line
+			//   }
+			// });
 
 ///
 
@@ -108,31 +97,6 @@ $(document).ready(function() {
 	};
 	searchWikiData(); //calls function, searchWikiData
 
-//function to make enter key submit like button click
-   // $(function () {
-
-   //          // $('#text').keypress(function (event) {
-   //          //     if (event.which == 13) {
-   //          //         alert("enter pressed");
-   //          //         //return false;
-   //          //     }
-   //          // });
-
-   //          // $("#btn").click(function () {
-   //          //     var e = jQuery.Event('keypress');
-   //          //     e.which = 13; // #13 = Enter key
-   //          //     $("#address").focus();
-   //          //      alert("button pressed");
-   //          // });
-       
-   //          $("#sub").on("submit", function(){
-   //          	//searchWikiData(); //calls function searchWikiData() on enter key
-   //      			alert("FORM WAS SUBMITTED");
-			// 	        return false; //Otherwise the form will be submitted
-   //  				});
-
-   //      });
-
 
 	function getFrequency(string, cutOff) {
 
@@ -177,7 +141,6 @@ $(document).ready(function() {
 	$("#output").html(frequencies); //print resulting most frequent to html
 
 
-
 	//Search for images via Flickr
 	function searchFlickr()	 {
 		$("#btnEnterSearchTerm").click(function(){
@@ -203,6 +166,13 @@ $(document).ready(function() {
 		});
 	};
 	searchFlickr(); //calls function, searchFlickr
+
+
+    $("#btnEnterSearchTerm").click(function(){ //fade in output
+        //$("#output").fadeIn("slow");
+        $("#output").fadeIn(3000);
+    });
+
 
 }); ///closes document ready function, but why not underlining?
 

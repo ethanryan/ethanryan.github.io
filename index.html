@@ -27,7 +27,6 @@
 		/* Header styles */
 		header {
 		  background-color: #1b5dce; /* blue banner at top */
-		  position: fixed;
 		  top: 0;
 		  left: 0;
 		  right: 0;
@@ -54,7 +53,6 @@
 
     .center {
       text-align: center;
-      border: 3px yellow;
     }
 
     .blue-text {
@@ -70,7 +68,6 @@
 
 img    { height: 375px; margin:1px; display: block; margin-left: auto; margin-right: auto;}
 body   { background-color: ; } 
-/*span { color:black; font-size:18px; } */
   </style>
 
 </head>
@@ -85,9 +82,7 @@ body   { background-color: ; }
 	</header>
 
 
-
 <!-- text at the top of page -->
-<h1 class="center blue-text">Just the Gist</h1>
 <h3 class="center">Who has time for nuance, complexity, 
  and information overload?
 <br>Just give me the gist!</h3>
@@ -101,8 +96,8 @@ body   { background-color: ; }
   </div>
 </form>
 
- <!-- placeholder image here of information overload -->
 <br>
+ <!-- placeholder image here of information overload -->
 
 <!-- image search results-->
 <div id="results" class="image-centered">
@@ -130,18 +125,6 @@ body   { background-color: ; }
 </h3>
 
 
-
-
-<!-- trying this too <<< -original code i found online
-<div class="container">
-  <h1>Wikipedia Search</h1>
-  <input id="searchTerm" name="search" placeholder="Search..">
-  <button id='search' type="button" class ="btn btn-primary">Submit</button>
-  <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-primary">Random</a>
-  <div id="output"></div>
-</div> -->
-
-
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
@@ -149,9 +132,6 @@ body   { background-color: ; }
   <!-- Firebase CDN -->
    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 
-
-<!-- adding this lodash -->
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js"></script> --> 
 
 <!-- js -->
 <script src="justTheGist.js"></script>
