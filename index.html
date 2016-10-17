@@ -20,25 +20,25 @@
     }
 
     .container { /* at top of page */
-  		max-width: 1000px;
-  		margin: 0 auto;
-		}
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-		/* Header styles */
-		header {
-		  background-color: #1b5dce; /* blue banner at top */
-		  top: 0;
-		  left: 0;
-		  right: 0;
-		  text-align: center;
-		}
+    /* Header styles */
+    header {
+      background-color: #1b5dce; /* blue banner at top */
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
 
-		header h1 {
-		  color: #FFF; /* white text at top */
-		  padding: 10px 2%;
-		  margin: 0;
-		  display: inline-block;
-		}
+    header h1 {
+      color: #FFF; /* white text at top */
+      padding: 10px 2%;
+      margin: 0;
+      display: inline-block;
+    }
 
     .wrapper {
       border: 1px solid #000;
@@ -50,32 +50,32 @@
       background-color: transparent;
       border-width: 1px;
     }
-	  
+    
     button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  outline: none; /* removes outline to last clicked button*/
-  background-color: blue; /* button is blue */
-  color: white; /* button text is white */
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      outline: none; /* removes outline to last clicked button*/
+      background-color: blue; /* button is blue */
+      color: white; /* button text is white */
 
-}
+    }
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  background-color: white; /* button is white on hover */
-  color: blue; /* button text is blue on hover */
-}
+    button:hover,
+    input[type="button"]:hover,
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
+      background-color: white; /* button is white on hover */
+      color: blue; /* button text is blue on hover */
+    }
 
 
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  background-color: yellow; /* button is yellow on click */
-}
+    button:active,
+    input[type="button"]:active,
+    input[type="reset"]:active,
+    input[type="submit"]:active {
+      background-color: yellow; /* button is yellow on click */
+    }
 
     .center {
       text-align: center;
@@ -92,63 +92,63 @@ input[type="submit"]:active {
       height: 375px;
     }
 
-img    { height: 375px; margin:1px; display: block; margin-left: auto; margin-right: auto;}
-body   { background-color: ; } 
+    img    { height: 375px; margin:1px; display: block; margin-left: auto; margin-right: auto;}
+    body   { background-color: ; } 
   </style>
 
 </head>
 
 <body>
 
-<!-- header section at top of page -->
-	<header>
-	  <section class="container" class="center">
-	    <h1 class="center">Just the Gist</h1>
-	  </section>
-	</header>
+  <!-- header section at top of page -->
+  <header>
+   <section class="container" class="center">
+     <h1 class="center">Just the Gist</h1>
+   </section>
+ </header>
 
 
-<!-- text at the top of page -->
-<h3 class="center">Who has time for nuance, complexity, 
- and information overload?
-<br>Just give me the gist!</h3>
-<br>
+ <!-- text at the top of page -->
+ <h3 class="center">Who has time for nuance, complexity, 
+   and information overload?
+   <br>Just give me the gist!</h3>
+   <br>
 
-<!-- search bar and button -->
-<form action="#" id="sub" class="center" method="POST" onsubmit="return false"> <!-- onsubmit="return false" makes form not get submitted -->
-  <div class="wrapper">
-  <input type="text" id="searchTerm" name="txt" placeholder="Search Term"/>
-  <input type="button" id="btnEnterSearchTerm" value="Go"/>
-  </div>
-</form>
-
-<br>
- <!-- placeholder image here of information overload -->
-
-<!-- image search results-->
-<div id="results" class="image-centered">
-<img class="image-centered" src="information-overload.jpg" alt="info overload" style="">
-</div>
-
-
- <!-- search results -->
-
-<h3 class="center">You searched for:
-  <span class="topic center blue-text"></span>
-</h3>
-
-
- <!-- wikipedia search results-->
-
-<h3 class="center">Wikipedia results:
-    <div id="output" class="blue-text" placeholder="Search Term">
-    <span>
-    One, Two, Three
-    <br/>Four, Five, Six
-    <br/>Seven, Eight, Nine
-    </span>
+   <!-- search bar and button -->
+   <form action="#" id="sub" class="center" method="POST" onsubmit="return false"> <!-- onsubmit="return false" makes form not get submitted -->
+    <div class="wrapper">
+      <input type="text" id="searchTerm" name="txt" placeholder="Search Term"/>
+      <input type="button" id="btnEnterSearchTerm" value="Go"/>
     </div>
-</h3>
+  </form>
+
+  <br>
+  <!-- placeholder image here of information overload -->
+
+  <!-- image search results-->
+  <div id="results" class="image-centered">
+    <img class="image-centered" src="information-overload.jpg" alt="info overload" style="">
+  </div>
+
+
+  <!-- search results -->
+
+  <h3 class="center">You searched for:
+    <span class="topic center blue-text"></span>
+  </h3>
+
+
+  <!-- wikipedia search results-->
+
+  <h3 class="center">Wikipedia results:
+    <div id="output" class="blue-text" placeholder="Search Term">
+      <span>
+        One, Two, Three
+        <br/>Four, Five, Six
+        <br/>Seven, Eight, Nine
+      </span>
+    </div>
+  </h3>
 
 
   <!-- jQuery -->
@@ -156,11 +156,11 @@ body   { background-color: ; }
 
 
   <!-- Firebase CDN -->
-   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 
 
-<!-- js -->
-<script src="justTheGist.js"></script>
+  <!-- js -->
+  <script src="justTheGist.js"></script>
 
 </body>
 
