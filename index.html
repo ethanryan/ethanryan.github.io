@@ -50,6 +50,32 @@
       background-color: transparent;
       border-width: 1px;
     }
+	  
+    button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  outline: none; /* removes outline to last clicked button*/
+  background-color: blue; /* button is blue */
+  color: white; /* button text is white */
+
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: white; /* button is white on hover */
+  color: blue; /* button text is blue on hover */
+}
+
+
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  background-color: yellow; /* button is yellow on click */
+}
 
     .center {
       text-align: center;
