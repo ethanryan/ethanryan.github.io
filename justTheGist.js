@@ -96,6 +96,14 @@ $(document).ready(function() {
 	  });
 	};
 	searchWikiData(); //calls function, searchWikiData
+	
+	//so return key clicks btnEnterSearchTerm button
+	$("#searchTerm").keypress(function(e) {
+    		if(e.which == 13) {
+        	    //alert('You pressed enter!');
+    		$("#btnEnterSearchTerm").click();
+    		}
+	});
 
 
 	function getFrequency(string, cutOff) {
